@@ -146,10 +146,7 @@
     </header>
 
     <section class="relative min-h-[95vh] flex items-center justify-center pt-20 overflow-hidden">
-        <!-- Background Único com Parallax -->
         <div class="absolute inset-0 bg-fixed bg-cover bg-center" style="background-image: url('https://rondomig.com.br/img/hero.webp');"></div>
-        
-        <!-- Gradiente de Sobreposição para Leitura -->
         <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/95 via-brand-dark/80 to-brand-red/70 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
 
@@ -178,12 +175,10 @@
         <div class="container mx-auto px-4 mb-6 text-center">
             <p class="text-sm font-bold text-gray-400 uppercase tracking-widest">Trabalhamos com as melhores marcas do mercado</p>
         </div>
-        <!-- Efeito de sombra nas bordas -->
         <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
         <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
         
         <div class="flex w-max animate-marquee">
-            <!-- Conjunto de Marcas com flex-shrink-0 para evitar sobreposição -->
             <div class="flex items-center justify-around space-x-16 px-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-300">
                 <img src="https://www.rondomig.com.br/img/marcas/mobil.svg" class="h-16 md:h-24 w-40 md:w-48 object-contain shrink-0" alt="Mobil">
                 <img src="https://www.rondomig.com.br/img/marcas/monroe.svg" class="h-16 md:h-24 w-40 md:w-48 object-contain shrink-0" alt="Monroe">
@@ -211,7 +206,6 @@
     </section>
 
     <section id="pilares" class="py-24 relative bg-brand-dark overflow-hidden">
-        <!-- Background Imagem do Estoque -->
         <div class="absolute inset-0 bg-fixed bg-cover bg-center opacity-50" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aCHoIqnd8euR9DxZ0W_baIgLosTedKXOYgbhkvid4ufdWy2BLayr8LI&s=10');"></div>
         <div class="absolute inset-0 bg-gradient-to-tr from-brand-dark via-brand-dark/80 to-brand-red/40"></div>
 
@@ -254,7 +248,6 @@
     </section>
 
     <section id="produtos" class="py-24 bg-gray-900 relative">
-        <!-- Textura de Fundo -->
         <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#B61917 1px, transparent 1px); background-size: 20px 20px;"></div>
         
         <div class="container mx-auto px-4 md:px-8 relative z-10">
@@ -271,23 +264,16 @@
                 </div>
             </div>
 
-            <!-- Wrapper Relativo para as Setas -->
             <div class="relative w-full group">
-                
-                <!-- Seta Esquerda -->
                 <button id="slider-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 z-20 w-14 h-14 bg-brand-red text-white rounded-full shadow-[0_0_20px_rgba(182,25,23,0.6)] flex items-center justify-center opacity-90 hover:opacity-100 hover:bg-brand-red2 hover:scale-110 transition-all focus:outline-none hidden md:flex">
                     <i class="fas fa-chevron-left text-2xl"></i>
                 </button>
-                
-                <!-- Seta Direita -->
                 <button id="slider-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 z-20 w-14 h-14 bg-brand-red text-white rounded-full shadow-[0_0_20px_rgba(182,25,23,0.6)] flex items-center justify-center opacity-90 hover:opacity-100 hover:bg-brand-red2 hover:scale-110 transition-all focus:outline-none hidden md:flex">
                     <i class="fas fa-chevron-right text-2xl"></i>
                 </button>
 
-                <!-- Carrossel de Produtos (Removido o Snap para o Scroll Contínuo) -->
                 <div class="flex overflow-x-auto gap-6 pb-8 scrollbar-hide items-stretch" id="product-slider">
-                    
-                    <!-- Card 1: Freios e Direção -->
+                    <!-- Cards de Produtos ocultos por concisão no exemplo, mantidos iguaizinhos no arquivo final -->
                     <div class="w-full md:w-[calc(50%-12px)] flex-shrink-0 bg-gray-800 rounded-2xl overflow-hidden group border border-gray-700 hover:border-brand-red transition-all duration-300 flex flex-col shadow-lg" data-aos="fade-up" data-aos-delay="0">
                         <div class="relative h-72 shrink-0 overflow-hidden cursor-pointer" onclick="openLightbox('https://rondomig.com.br/img/service-1.webp')">
                             <div class="absolute top-4 left-4 z-10 bg-brand-red text-white text-sm font-bold px-4 py-2 rounded shadow-lg uppercase">Pronta Entrega</div>
@@ -313,7 +299,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 2: Motores e Escapamentos -->
                     <div class="w-full md:w-[calc(50%-12px)] flex-shrink-0 bg-gray-800 rounded-2xl overflow-hidden group border border-gray-700 hover:border-brand-red transition-all duration-300 flex flex-col shadow-lg" data-aos="fade-up" data-aos-delay="100">
                         <div class="relative h-72 shrink-0 overflow-hidden cursor-pointer" onclick="openLightbox('https://www.rondomig.com.br/img/service-2.webp')">
                             <div class="absolute top-4 left-4 z-10 bg-brand-red text-white text-sm font-bold px-4 py-2 rounded shadow-lg uppercase">Pronta Entrega</div>
@@ -339,7 +324,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 3: Suspensão -->
                     <div class="w-full md:w-[calc(50%-12px)] flex-shrink-0 bg-gray-800 rounded-2xl overflow-hidden group border border-gray-700 hover:border-brand-red transition-all duration-300 flex flex-col shadow-lg" data-aos="fade-up" data-aos-delay="200">
                         <div class="relative h-72 shrink-0 overflow-hidden cursor-pointer" onclick="openLightbox('https://rondomig.com.br/img/service-3.webp')">
                             <div class="absolute top-4 left-4 z-10 bg-brand-red text-white text-sm font-bold px-4 py-2 rounded shadow-lg uppercase">Pronta Entrega</div>
@@ -365,7 +349,6 @@
                         </div>
                     </div>
 
-                    <!-- Card 4: Lubrificantes e Baterias -->
                     <div class="w-full md:w-[calc(50%-12px)] flex-shrink-0 bg-gray-800 rounded-2xl overflow-hidden group border border-gray-700 hover:border-brand-red transition-all duration-300 flex flex-col shadow-lg" data-aos="fade-up" data-aos-delay="300">
                         <div class="relative h-72 shrink-0 overflow-hidden cursor-pointer" onclick="openLightbox('https://www.rondomig.com.br/img/service-4.webp')">
                             <div class="absolute top-4 left-4 z-10 bg-brand-blue text-white text-sm font-bold px-4 py-2 rounded shadow-lg uppercase">Mais Vendido</div>
@@ -390,7 +373,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             
@@ -398,10 +380,7 @@
     </section>
 
     <section id="b2b" class="relative py-28 overflow-hidden bg-brand-dark">
-        <!-- Parallax Background -->
         <div class="absolute inset-0 bg-fixed bg-cover bg-center opacity-40" style="background-image: url('https://rondomig.com.br/img/consultoria.webp');"></div>
-        
-        <!-- Gradientes Profundos -->
         <div class="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/90 to-brand-blue/60 mix-blend-multiply"></div>
         
         <div class="container mx-auto px-4 md:px-8 relative z-10">
@@ -426,12 +405,10 @@
                     </a>
                 </div>
                 
-                <!-- B2B Image Highlight -->
                 <div class="lg:w-1/2 relative" data-aos="fade-left">
                     <div class="absolute -inset-4 bg-gradient-to-tr from-brand-red to-brand-blue opacity-50 blur-2xl rounded-full animate-pulse-fast"></div>
                     <img src="https://rondomig.com.br/img/consultoria.webp" alt="Atendimento Mecânico" class="relative rounded-2xl shadow-2xl border border-white/10 z-10 object-cover h-[500px] w-full">
                     
-                    <!-- Floating Badge -->
                     <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4 animate-float border border-gray-100">
                         <div class="bg-brand-blue text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">
                             <i class="fas fa-truck-fast"></i>
@@ -449,99 +426,85 @@
     <section class="py-24 relative overflow-hidden bg-gray-900 border-t border-gray-800">
         <!-- Background Orbs para Contraste -->
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-red rounded-full mix-blend-screen filter blur-[128px] opacity-30 animate-pulse-fast"></div>
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-[#25D366] rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-[#4285F4] rounded-full mix-blend-screen filter blur-[128px] opacity-20"></div>
 
         <div class="container mx-auto px-4 md:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="zoom-in">
+            <div class="text-center max-w-4xl mx-auto mb-16" data-aos="zoom-in">
+                <!-- Badge Google -->
+                <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="bg-white p-2 rounded-full flex items-center justify-center shadow-lg">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" alt="Google Logo" class="w-6 h-6">
+                    </div>
+                    <div class="flex text-[#FBBC05] text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-white font-bold ml-2">Avaliações 5 Estrelas</span>
+                </div>
+
                 <h2 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Quem confia, não troca.</h2>
                 <div class="w-20 h-1 bg-brand-red mx-auto rounded mb-6"></div>
-                <p class="text-gray-300 text-lg">Mais de 30 anos abastecendo as oficinas e motoristas de João Monlevade com agilidade e transparência.</p>
+                <p class="text-gray-300 text-lg">Mais de 30 anos abastecendo as oficinas e motoristas de João Monlevade com agilidade e transparência comprovada pelos nossos clientes no Google.</p>
             </div>
 
-            <!-- Grid de Mockups de WhatsApp -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Carrossel de Avaliações Reais do Google -->
+            <div class="relative w-full group max-w-7xl mx-auto">
                 
-                <!-- Print 1 -->
-                <div class="bg-[#1e293b]/90 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-gray-700 flex flex-col" data-aos="fade-up" data-aos-delay="0">
-                    <div class="flex items-center gap-3 mb-6 border-b border-gray-700 pb-4">
-                        <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
-                            <i class="fas fa-user text-gray-400"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-white">Oficina do João</p>
-                            <p class="text-xs text-[#25D366]">Online</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-3 flex-1">
-                        <div class="bg-gray-700 text-gray-200 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-3 max-w-[85%] self-start text-sm relative">
-                            Bom dia Mateus! Consegue o kit de embreagem do Palio 2014 pra mim ainda hoje? O carro tá no elevador.
-                        </div>
-                        <div class="bg-[#005c4b] text-white rounded-tl-2xl rounded-bl-2xl rounded-br-2xl p-3 max-w-[85%] self-end text-sm relative shadow-sm">
-                            Bom dia João! Tenho a pronta entrega aqui original LUK. O motoboy já tá saindo pra levar pra você! 🚀
-                        </div>
-                        <div class="bg-gray-700 text-gray-200 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-3 max-w-[85%] self-start text-sm relative">
-                            Show demais! Vocês salvam muito. Valeu!
-                        </div>
-                    </div>
-                </div>
+                <!-- Seta Esquerda -->
+                <button id="review-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-6 z-20 w-12 h-12 md:w-14 md:h-14 bg-[#4285F4] text-white rounded-full shadow-[0_0_20px_rgba(66,133,244,0.4)] flex items-center justify-center opacity-90 hover:opacity-100 hover:bg-blue-600 hover:scale-110 transition-all focus:outline-none hidden md:flex">
+                    <i class="fas fa-chevron-left text-xl md:text-2xl"></i>
+                </button>
+                
+                <!-- Seta Direita -->
+                <button id="review-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-6 z-20 w-12 h-12 md:w-14 md:h-14 bg-[#4285F4] text-white rounded-full shadow-[0_0_20px_rgba(66,133,244,0.4)] flex items-center justify-center opacity-90 hover:opacity-100 hover:bg-blue-600 hover:scale-110 transition-all focus:outline-none hidden md:flex">
+                    <i class="fas fa-chevron-right text-xl md:text-2xl"></i>
+                </button>
 
-                <!-- Print 2 -->
-                <div class="bg-[#1e293b]/90 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-gray-700 flex flex-col transform md:-translate-y-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center gap-3 mb-6 border-b border-gray-700 pb-4">
-                        <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
-                            <i class="fas fa-user text-gray-400"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-white">Carlos - Motorista</p>
-                            <p class="text-xs text-[#25D366]">Online</p>
-                        </div>
+                <!-- Track de Rolagem -->
+                <div class="flex overflow-x-auto gap-8 pb-12 scrollbar-hide items-center py-8 px-4" id="review-slider">
+                    
+                    <!-- Avaliação 1 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/NCw6mYb.png')">
+                        <img src="https://i.imgur.com/NCw6mYb.png" alt="Avaliação Google" class="w-full h-auto object-contain">
                     </div>
-                    <div class="flex flex-col gap-3 flex-1">
-                        <div class="bg-gray-700 text-gray-200 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-3 max-w-[85%] self-start text-sm relative">
-                            Fala Samyr, fui em 3 lugares e me venderam a pastilha de freio errada pro meu Corolla. Consegue me ajudar?
-                        </div>
-                        <div class="bg-[#005c4b] text-white rounded-tl-2xl rounded-bl-2xl rounded-br-2xl p-3 max-w-[85%] self-end text-sm relative shadow-sm">
-                            Boa tarde Carlos! Manda a foto do chassi dele aí. Pelo sistema aqui a gente não erra.
-                        </div>
-                        <div class="bg-[#005c4b] text-white rounded-tl-2xl rounded-bl-2xl rounded-br-2xl p-3 max-w-[85%] self-end text-sm relative shadow-sm">
-                            Pronto, conferido. Tenho a Cobreq aqui, separada pra você!
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Print 3 -->
-                <div class="bg-[#1e293b]/90 backdrop-blur-md rounded-3xl p-6 shadow-2xl border border-gray-700 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center gap-3 mb-6 border-b border-gray-700 pb-4">
-                        <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
-                            <i class="fas fa-building text-gray-400"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-white">Auto Centro JM</p>
-                            <p class="text-xs text-[#25D366]">Online</p>
-                        </div>
+                    <!-- Avaliação 2 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/qigLoKG.png')">
+                        <img src="https://i.imgur.com/qigLoKG.png" alt="Avaliação Google" class="w-full h-auto object-contain">
                     </div>
-                    <div class="flex flex-col gap-3 flex-1">
-                        <div class="bg-gray-700 text-gray-200 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-3 max-w-[85%] self-start text-sm relative">
-                            Robervane, as peças da revisão da S10 chegaram certinhas. Tudo original como o cliente pediu.
-                        </div>
-                        <div class="bg-[#005c4b] text-white rounded-tl-2xl rounded-bl-2xl rounded-br-2xl p-3 max-w-[85%] self-end text-sm relative shadow-sm">
-                            Excelente! Precisando é só chamar. Já lancei o faturamento pro dia 15 como combinamos.
-                        </div>
-                        <div class="bg-gray-700 text-gray-200 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-3 max-w-[85%] self-start text-sm relative">
-                            Obrigado pela parceria de sempre! 🙏
-                        </div>
-                    </div>
-                </div>
 
+                    <!-- Avaliação 3 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/aUHQAhv.png')">
+                        <img src="https://i.imgur.com/aUHQAhv.png" alt="Avaliação Google" class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- Avaliação 4 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/nO7rgWZ.png')">
+                        <img src="https://i.imgur.com/nO7rgWZ.png" alt="Avaliação Google" class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- Avaliação 5 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/QsjoJ3I.png')">
+                        <img src="https://i.imgur.com/QsjoJ3I.png" alt="Avaliação Google" class="w-full h-auto object-contain">
+                    </div>
+
+                    <!-- Avaliação 6 -->
+                    <div class="w-[85vw] md:w-[600px] flex-shrink-0 bg-white rounded-2xl overflow-hidden group border border-transparent hover:border-[#4285F4]/50 transition-all duration-300 shadow-lg cursor-pointer transform hover:scale-105 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(66,133,244,0.3)] relative z-10 hover:z-20" onclick="openLightbox('https://i.imgur.com/sLkl2DF.png')">
+                        <img src="https://i.imgur.com/sLkl2DF.png" alt="Avaliação Google" class="w-full h-auto object-contain">
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="https://www.google.com/search?q=RondomiG+Auto+Pe%C3%A7as" target="_blank" class="inline-flex items-center gap-2 text-gray-300 hover:text-white border border-gray-600 hover:border-white px-6 py-2 rounded-full transition-colors text-sm">
+                    Ver todas as avaliações no Google <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Nova Seção com a imagem OG -->
     <section class="relative py-32 overflow-hidden flex items-center justify-center border-t border-white/10">
-        <!-- Background Imagem -->
         <div class="absolute inset-0 bg-fixed bg-cover bg-center" style="background-image: url('https://rondomig.com.br/img/rondomig-og-image.png');"></div>
-        <!-- Overlay Gradiente -->
         <div class="absolute inset-0 bg-brand-dark/80 mix-blend-multiply"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/50 to-brand-dark"></div>
         
@@ -663,12 +626,11 @@
         function openLightbox(imageSrc) {
             lightboxImg.src = imageSrc;
             lightbox.classList.add('active');
-            // Timeout para o efeito de scale funcionar após o display flex aplicar
             setTimeout(() => {
                 lightboxImg.classList.remove('scale-95');
                 lightboxImg.classList.add('scale-100');
             }, 10);
-            document.body.style.overflow = 'hidden'; // Impede o scroll de fundo
+            document.body.style.overflow = 'hidden'; 
         }
 
         function closeLightbox() {
@@ -677,25 +639,27 @@
             lightbox.style.opacity = '0';
             setTimeout(() => {
                 lightbox.classList.remove('active');
-                lightbox.style.opacity = ''; // Reseta inline style
-                lightboxImg.src = ''; // Limpa a img
-                document.body.style.overflow = ''; // Devolve o scroll
-            }, 300); // Tempo do transition
+                lightbox.style.opacity = ''; 
+                lightboxImg.src = ''; 
+                document.body.style.overflow = ''; 
+            }, 300); 
         }
 
-        // Fechar com a tecla ESC
         document.addEventListener('keydown', function(event) {
             if (event.key === "Escape" && lightbox.classList.contains('active')) {
                 closeLightbox();
             }
         });
 
-        const slider = document.getElementById('product-slider');
-        const btnPrev = document.getElementById('slider-prev');
-        const btnNext = document.getElementById('slider-next');
+        // Lógica Genérica de Scroll Infinito
+        function setupInfiniteSlider(sliderId, prevBtnId, nextBtnId, speedVal, scrollStep) {
+            const slider = document.getElementById(sliderId);
+            const btnPrev = document.getElementById(prevBtnId);
+            const btnNext = document.getElementById(nextBtnId);
 
-        if (slider) {
-            // Clona os cards originais de forma segura (mantém as funções de clique/lightbox)
+            if (!slider) return;
+
+            // Clona os itens para o loop
             const originalCards = Array.from(slider.children);
             originalCards.forEach(card => {
                 const clone = card.cloneNode(true);
@@ -703,15 +667,14 @@
             });
 
             let isHovered = false;
-            let currentScroll = 0; // Variável acumuladora
-            let scrollSpeed = 0.8; // Velocidade do loop (ajuste se quiser mais rápido ou devagar)
+            let currentScroll = 0; 
+            let scrollSpeed = speedVal; 
 
             function autoScroll() {
                 if (!isHovered) {
                     currentScroll += scrollSpeed;
                     slider.scrollLeft = currentScroll;
                     
-                    // Se o scroll passar da metade exata do container, volta para o início invisivelmente
                     if (slider.scrollLeft >= slider.scrollWidth / 2) {
                         currentScroll = 0;
                         slider.scrollLeft = 0;
@@ -720,33 +683,30 @@
                 requestAnimationFrame(autoScroll);
             }
 
-            // Inicia o scroll contínuo
             requestAnimationFrame(autoScroll);
 
-            // Sincroniza a posição atual caso o usuário faça um scroll manual com o mouse ou dedo
             slider.addEventListener('scroll', () => {
                 if (isHovered) {
                     currentScroll = slider.scrollLeft;
                 }
             });
 
-            // Pausa o carrossel quando o mouse estiver em cima
+            // Eventos de pausa
             slider.addEventListener('mouseenter', () => isHovered = true);
             slider.addEventListener('mouseleave', () => {
                 isHovered = false;
-                currentScroll = slider.scrollLeft; // Atualiza a posição para não dar saltos
+                currentScroll = slider.scrollLeft; 
             });
             
-            // Pausa também em touch (celular)
             slider.addEventListener('touchstart', () => isHovered = true);
             slider.addEventListener('touchend', () => {
                 setTimeout(() => { 
                     isHovered = false; 
                     currentScroll = slider.scrollLeft;
-                }, 1500); // Demora 1.5s para voltar a andar após tirar o dedo
+                }, 1500); 
             });
 
-            // Lógica das setas laterais
+            // Botões de navegação
             if (btnPrev) {
                 btnPrev.addEventListener('mouseenter', () => isHovered = true);
                 btnPrev.addEventListener('mouseleave', () => {
@@ -754,7 +714,7 @@
                     currentScroll = slider.scrollLeft;
                 });
                 btnPrev.addEventListener('click', () => {
-                    slider.scrollBy({ left: -400, behavior: 'smooth' });
+                    slider.scrollBy({ left: -scrollStep, behavior: 'smooth' });
                 });
             }
             if (btnNext) {
@@ -764,10 +724,16 @@
                     currentScroll = slider.scrollLeft;
                 });
                 btnNext.addEventListener('click', () => {
-                    slider.scrollBy({ left: 400, behavior: 'smooth' });
+                    slider.scrollBy({ left: scrollStep, behavior: 'smooth' });
                 });
             }
         }
+
+        // Inicializa o carrossel de Produtos (Rápido)
+        setupInfiniteSlider('product-slider', 'slider-prev', 'slider-next', 0.8, 400);
+        
+        // Inicializa o carrossel de Avaliações do Google (Mais Lento e suave)
+        setupInfiniteSlider('review-slider', 'review-prev', 'review-next', 0.5, 450);
 
     </script>
 </body>
